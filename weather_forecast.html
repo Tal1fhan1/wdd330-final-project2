@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel Accommodation | Home</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="/js/main.js" type="module"></script>
+</head>
+
+<body>
+    <header>
+        <button class="menu-button">Menu</button>
+        <div class="nav">
+            <a href="/index.html">Home</a> |
+            <a href="/accommodation_bookings.html">Accommodation Bookings</a> |
+            <a href="/flight_bookings.html">Flight Bookings</a>
+        </div>
+        <section class="timezone-converter">Time-Zone Converter<br>
+            <section class="current"></section>
+            <section id="hide1" class="destination"></section>
+        </section>
+    </header>
+    <div id="mySidebar" class="sidebar">
+        <a>City Search</a>
+        <a class="closebtn">×</a>
+        <div class="search-container">
+            <form>
+                <input type="text" id="input" placeholder="Search..." name="search">
+                <button type="button" id="search"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+
+        <p>Current Weather:<br><span id="current-temp"></span> </p>
+        <figure>
+            <img id="weather-icon" src="#" alt="weather icon">
+            <figcaption id="current-cap"></figcaption>
+        </figure>
+        <section id="hide2">
+            <p>Destination Weather:<br><span id="destination-temp"></span> </p>
+            <figure>
+                <img id="weather-icon2" src="#" alt="weather icon">
+                <figcaption id="destination-cap"></figcaption>
+            </figure>
+            <a href="/weather_forecast.html" class="forecast-link">5-Day Forecast</a>
+        </section>
+    </div>
+</body>
+
+</html>

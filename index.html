@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel Accommodation | Home</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="/js/main.js" type="module"></script>
+</head>
+
+<body>
+    <header>
+        <button class="menu-button">Menu</button>
+        <div class="nav">
+            <a href="/index.html">Home</a> |
+            <a href="/accommodation_bookings.html" id="ab">Accommodation Bookings</a> |
+            <a href="/flight_bookings.html">Flight Bookings</a>
+        </div>
+        <section class="timezone-converter">Time-Zone Converter<br>
+            <section class="current"></section>
+            <section id="hide1" class="destination"></section>
+        </section>
+    </header>
+    <div id="mySidebar" class="sidebar">
+        <a>City Search</a>
+        <a class="closebtn">×</a>
+        <div class="search-container">
+            <form action="/accommodation_bookings.html">
+                <input type="text" id="input" placeholder="Search..." name="search">
+                <button type="button" id="search"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+
+        <p>Current Weather:<br><span id="current-temp"></span> </p>
+        <figure>
+            <img id="weather-icon" src="#" alt="weather icon">
+            <figcaption id="current-cap"></figcaption>
+        </figure>
+        <section id="hide2">
+            <p>Destination Weather:<br><span id="destination-temp"></span> </p>
+            <figure>
+                <img id="weather-icon2" src="#" alt="weather icon">
+                <figcaption id="destination-cap"></figcaption>
+            </figure>
+            <a href="/weather_forecast.html" class="forecast-link">5-Day Forecast</a>
+        </section>
+    </div>
+    <div id="main">
+        <h1>Expert-Level Travel Accommodation</h1>
+
+        <div class="description1">
+            <section class="info1">
+                <h2>Book An Accommodation Anywhere</h2>
+                <p>Experience the piece of mind of knowning that you will have a roof over your head when you reach your
+                    destination. Book a hotel, motel or AirBnB in whichever destination you choose to travel to. With
+                    City
+                    Search
+                    you can specify where you wish to go and see a massive catalog of accommodations with plenty of
+                    variety
+                    to
+                    choose from.</p>
+            </section>
+            <img class="hotel" src="/images/hotel_image.jpg">
+        </div>
+
+        <div class="description2">
+            <img class="plane" src="/images/take_off.jpg">
+            <section class="info2">
+                <h2>While You're At It, Why Not Book A Flight?</h2>
+                <p>You need not go back and forth between web pages to book both your flight and accommodation. It can
+                    all
+                    be
+                    done
+                    in one convenient location. All of your flights can be inputed here and receive your itinerary
+                    moments
+                    later. By
+                    using City Search, you will automatically have your destination set to the closest airport to your
+                    selected
+                    location.
+                </p>
+            </section>
+        </div>
+
+        <div class="description3">
+            <section class="info3">
+                <h2>Never lose track of time</h2>
+                <p>With the time-zone converter you can rest assured that you will always know what time it is on the
+                    other
+                    side.
+                    Your desired time-zone will be set automatically based on the location you selected on City Search.
+                    No
+                    more headaches trying to calculate the time differences between your destination and your home. At
+                    all
+                    times,
+                    you will be able to see the both times right next to the navigation bar.
+                </p>
+            </section>
+            <img class="globe" src="/images/time_zone_map.png">
+        </div>
+        <div class="description4">
+            <img class="weather" src="/images/weather_icon.png">
+            <section class="info4">
+                <h2>What's the forecast?</h2>
+                <p>In order to truly prepared for your trip, you not only need to know the time but also the weather.
+                    Choosing a
+                    location in the City Search will show the weather forecast for that locatation specifically. That's
+                    not
+                    all.
+                    There will also be future forecasts for up to 5 days after the current date. No need for any
+                    unnecessary
+                    surprises. If there is a rainy day comiing during your vacation or business trip, you will know
+                    about
+                    it.
+                </p>
+            </section>
+        </div>
+    </div>
+</body>
+
+</html>
