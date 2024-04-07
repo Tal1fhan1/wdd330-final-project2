@@ -1,0 +1,259 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,400&family=Orbitron:wght@400..900&family=Space+Mono:wght@700&display=swap");
+
+:root {
+    /* colors */
+    --primary-color: #0a2463;
+    --secondary-color: #fb3640;
+    --tertiary-color: #605f5e;
+
+    /* sizes */
+    --font-base: 18px;
+    --small-font: 0.8em;
+    --large-font: 1.2em;
+}
+
+img {
+    width: 300px;
+    height: 300px;
+    margin-bottom: 50px;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 10% 65% 25%;
+    background-color: #0a2463;
+    font-family: 'Orbitron', Arial, san-serif;
+    font-size: large;
+    color: white;
+    margin: 0px 0px;
+}
+
+.nav {
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+li a {
+    color: #0a2463;
+}
+
+a:hover {
+    color: #fb3640;
+}
+
+body {
+    margin: 0px;
+}
+
+h1 {
+    font-family: 'Orbitron', Arial, san-serif;
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+h2 {
+    font-family: 'Space Mono', Arial, san-serif;
+}
+
+p {
+    font-family: 'Montserrat', Arial, san-serif;
+}
+
+.menu-button {
+    grid-column: 1;
+    background-color: #fb3640;
+    text-align: center;
+    color: white;
+    font-family: 'Orbitron', Arial, san-serif;
+    font-size: large;
+}
+
+.menu-button:hover {
+    color: #0a2463;
+    cursor: pointer;
+}
+
+
+.timezone-converter {
+    background-color: #605f5e;
+    padding: 20px;
+    text-align: center;
+}
+
+.info1,
+.info3 {
+    margin-right: 20px;
+    grid-column: 1/3;
+}
+
+.info2,
+.info4 {
+    margin-left: 20px;
+    grid-column: 2/4;
+}
+
+.description1,
+.description2,
+.description3,
+.description4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.plane {
+    grid-column: 1;
+}
+
+.hotel {
+    grid-column: 3;
+}
+
+.globe {
+    grid-column: 3;
+}
+
+.weather {
+    grid-column: 1;
+}
+
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    font-family: 'Orbitron', Arial, san-serif;
+    font-size: smaller;
+    background-color: #fb3640;
+}
+
+.sidebar a {
+    padding: 8px 8px 8px 10px;
+    text-decoration: none;
+    font-size: 25px;
+    display: block;
+    transition: 0.3s;
+    color: white;
+    text-align: center;
+}
+
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    cursor: pointer;
+}
+
+.search-container {
+    padding-left: 22px;
+    margin-bottom: 30px;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+#weather-icon {
+    width: 100px;
+    height: 100px;
+    padding-left: 35px;
+    margin-bottom: 0%;
+}
+
+#weather-icon2 {
+    width: 100px;
+    height: 100px;
+    padding-left: 35px;
+    margin-bottom: 0%;
+}
+
+#hide1,
+#hide2 {
+    display: none;
+}
+
+.forecast-link:hover {
+    color: #0a2463;
+}
+
+figcaption {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.sidebar p {
+    text-align: center;
+    font-family: 'Orbitron', Arial, san-serif;
+    font-size: larger;
+}
+
+ul {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-left: 5%;
+}
+
+li {
+    list-style: none;
+    margin-bottom: 30px;
+    font-family: 'Space Mono', Arial, san-serif;
+    margin-right: 10px;
+}
+
+li img {
+    margin-bottom: 20px;
+}
+
+#loading {
+    text-align: center;
+}
+
+@media screen and (min-width: 900px) {
+
+    .info1,
+    .info3 {
+        margin-right: 20px;
+        grid-column: 1/3;
+        font-size: 20px;
+    }
+
+    .info2,
+    .info4 {
+        margin-left: 20px;
+        grid-column: 2/4;
+        font-size: 20px;
+    }
+
+    .description1,
+    .description2,
+    .description3,
+    .description4 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin-left: 250px;
+        margin-right: 250px;
+    }
+
+    ul {
+        margin-left: 20%;
+    }
+}
